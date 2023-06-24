@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Define the list of file names
+files=("comprehension" "informationalText" "storyElements" "completingSentence" "practiceReading" "vocabularyMeaning" "vocabularyWithimage" "vocabularyContext")
+
+# Loop through the list of files
+for file in "${files[@]}"
+do
+    # Create the file (here I am create angular components)
+    ng g c "${file}"
+done
+
+echo "Files created successfully!"
